@@ -30,18 +30,18 @@
             <h2>Add A Category</h2>
           </div>
           <div class="card-body">
-            <form>
+            <form action ='includes/functions.php' method='post'>
               <div class="row">
                 <div class="col-sm-7">
                   <div class="form-group">
                     <label for="fname">Name</label>
-                    <input type="text" class="form-control" placeholder="">
+                    <input type="text" class="form-control" name='cat_title' placeholder="">
                   </div>
                 </div>
               </div>
           </div>
           <div class="form-footer pt-5 m-4 border-top">
-            <button type="submit" class="btn btn-success btn-default">Save</button>
+            <button type="submit" class="btn btn-success btn-default" name='cat_add'>Save</button>
           </div>
           </form>
         </div>
