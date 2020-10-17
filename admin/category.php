@@ -29,10 +29,10 @@
           <div class="card-header card-header-border-bottom">
             <h2>Add A Category</h2>
           </div>
+          <form action ='includes/functions.php' method='post'>
           <div class="card-body">
-            <form action ='includes/functions.php' method='post'>
               <div class="row">
-                <div class="col-sm-7">
+                <div class="col-sm-6">
                   <div class="form-group">
                     <label for="fname">Name</label>
                     <input type="text" class="form-control" name='cat_title' placeholder="">
@@ -44,6 +44,17 @@
             <button type="submit" class="btn btn-success btn-default" name='cat_add'>Save</button>
           </div>
           </form>
+          <div class='col-sm-6'>
+            <table class="table table-bordered table-striped table-hover"> 
+              <thead>
+                <th>CategoryID</th>
+                <th>Category title</th>
+              </thead>
+              <tbody>
+               <?php show_category(); ?>
+             </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
