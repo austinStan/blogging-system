@@ -1,3 +1,4 @@
+
 <aside class="left-sidebar bg-sidebar">
     <div id="sidebar" class="sidebar sidebar-with-footer">
         <!-- Aplication Brand -->
@@ -22,7 +23,7 @@
 
 
                 <li class="has-sub active expand">
-                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                    <a class="sidenav-item-link" href="" data-toggle="collapse"
                         data-target="#dashboard" aria-expanded="false" aria-controls="dashboard">
                         <i class="mdi mdi-view-dashboard-outline"></i>
                         <span class="nav-text">Dashboard</span>
@@ -250,7 +251,7 @@
 
 
                 <li class="has-sub">
-                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#charts"
+                    <a class="sidenav-item-link" href="" data-toggle="collapse" data-target="#charts"
                         aria-expanded="false" aria-controls="charts">
                         <i class="mdi mdi-chart-pie"></i>
                         <span class="nav-text">Categories</span>

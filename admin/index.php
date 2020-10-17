@@ -1,3 +1,4 @@
+
   <?php include 'includes/header.php';?>
   <script>
     NProgress.configure({ showSpinner: false });
@@ -105,7 +106,6 @@
   <script src="assets/js/date-range.js"></script>
   <script src="assets/js/map.js"></script>
   <script src="assets/js/custom.js"></script>
-
 
 
 
