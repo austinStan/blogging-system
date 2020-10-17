@@ -16,6 +16,8 @@ if(isset($_POST['cat_add'])){ //checks if the form was submitted
       $result=mysqli_query($connection,$query);
       if(!$result){
           die('couldnot insert the data'.mysqli_error());
+      }else{
+        header("Location:../category.php?category_added");//page redirect
       }
 
     }
