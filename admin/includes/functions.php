@@ -42,9 +42,30 @@ function show_category(){
        echo "<tr>";
        echo "<td>{$cat_id}</td>";
        echo "<td>{$cat_title}</td>";
+       echo "<td><a href='category.php?delete_id={$cat_id}'>Delete</a></td>";
        echo "</tr>";
   }
 }
+
+ function delete_category(){
+   global $connection;
+
+   if(isset($_GET['delete_id'])){
+     $cat_id=$_GET['delete_id'];
+
+     $query="DELETE FROM categories WHERE cat_id = $cat_id";
+     $result=mysqli_query($connection,$query);
+     if(!$result){
+       die('couldnot delete'.mysqli_error());
+     }
+     else{
+      header("Location:category.php?category_deleted");//page redirect
+     }
+   }
+
+ }
+ delete_category();
+
 
 
 ?>

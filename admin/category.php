@@ -49,6 +49,7 @@
               <thead>
                 <th>CategoryID</th>
                 <th>Category title</th>
+                <th>Action</th>
               </thead>
               <tbody>
                <?php show_category(); ?>
